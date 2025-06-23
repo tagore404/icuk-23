@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM eclipse-temurin:17-jdk-jammy
 VOLUME /tmp
 ADD target/oms-customer-service-0.0.1-SNAPSHOT.jar oms-customer.jar
 RUN sh -c 'touch /oms-customer.jar'
