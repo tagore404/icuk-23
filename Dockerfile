@@ -2,7 +2,7 @@ FROM eclipse-temurin:11-jdk-jammy
 
 WORKDIR /app
 
-# Use wildcard so it works for all JAR names
+# Instead of hard-coded jar name, use wildcard:
 COPY target/*.jar app.jar
 
 EXPOSE 9090
